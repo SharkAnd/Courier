@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="5pt">
+
+    <LinearLayout
+        android:paddingLeft="6pt"
+        android:paddingRight="6pt"
+        android:paddingTop="3pt"
+        android:paddingBottom="3pt"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/textOrder.C"
+                android:text="Статус:"/>
+
+            <TextView
+                style="@style/textOrder.Data"
+                android:textSize="7pt"
+                android:id="@+id/status_order_item"
+                android:text="Доставлен"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/textOrder.C"
+                android:text="Дата заказа:"/>
+
+            <TextView
+                style="@style/textOrder.Data"
+                android:textSize="7pt"
+                android:id="@+id/date_created_order_item"
+                android:text="25 марта 2018, 19:25"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/textOrder.C"
+                android:text="Товар:"/>
+
+            <TextView
+                style="@style/textOrder.Data"
+                android:id="@+id/goods_order_item"
+                android:text="Товар №1, 45BYN"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/textOrder.C"
+                android:text="Цена:"/>
+
+            <TextView
+                android:textColor="#ff0000"
+                android:id="@+id/price_order_item"
+                style="@style/textOrder.Data"
+                android:text="45BYN"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/textOrder.C"
+                android:text="Дата доставки:"/>
+
+            <TextView
+                style="@style/textOrder.Data"
+                android:id="@+id/date_delivery_order_item"
+                android:text="28 марта 2018, 17:00"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/textOrder.C"
+                android:text="Адрес:"/>
+
+            <TextView
+                style="@style/textOrder.Data"
+                android:id="@+id/address_order_item"
+                android:text="ул.Рафиева,45 12"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_courier"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation">
+
+        <dell.courier.courier.CourierViewPager
+            android:id="@+id/courier_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <!--<include layout="@layout/orders_now"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+-->
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_dot_map"
+            android:visibility="gone"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/button"
+            android:layout_centerInParent="true"
+            />
+
+        <Button
+
+            android:id="@+id/add_dot_map"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="начальная точка"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_alignParentBottom="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation"
+         />
+
+</RelativeLayout>

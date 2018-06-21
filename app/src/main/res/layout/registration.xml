@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Регистрация"
+        android:gravity="center"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/first_name"
+                    android:inputType="textPersonName"
+                    android:hint="Имя"
+                    style="@style/text_registration"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/last_name"
+                    android:inputType="textPersonName"
+                    android:hint="Фамилия"
+                    style="@style/text_registration"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/phone_number"
+                    android:inputType="phone"
+                    android:hint="Телефон +375001234567"
+                    style="@style/text_registration"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    style="@style/text_registration"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:inputType="textPassword"
+                    android:hint="Пароль"
+                    style="@style/text_registration"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/save_personal_info_button"
+                android:layout_gravity="center"
+                android:text="Сохранить"
+                style="@style/ButtonStyle"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

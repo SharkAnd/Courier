@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    android:orientation="vertical"
+    tools:context="dell.courier.MainActivity"
+    style="@style/AppTheme.NoActionBar"
+    android:background="@color/white">
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+
+            android:focusableInTouchMode="true"
+            android:id="@+id/sing_in"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_marginTop="20pt"
+                android:layout_width="match_parent"
+                android:layout_height="90pt"
+                android:layout_gravity="top"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:src="@drawable/logo"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/email_singIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:textColor="@color/colorAccent"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/password_singIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Пароль"
+                    android:imeActionId="6"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/sign_in_button"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/password_singIn"
+                android:text="ВОЙТИ"
+                style="@style/ButtonStyle"
+                />
+
+            <Button
+                android:id="@+id/registration_button"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sign_in_button"
+                android:text="Регистрация"
+                style="@style/ButtonStyle"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <include
+        android:id="@+id/registration_frame"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        layout="@layout/registration"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+</RelativeLayout>

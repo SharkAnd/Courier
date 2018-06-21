@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    tools:context="dell.courier.client.ClientActivity$PlaceholderFragment">
+
+    <ProgressBar
+        android:visibility="visible"
+        android:id="@+id/progress_profile_layout"
+        android:foregroundGravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/client_profile_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/client_firstName"
+                style="@style/textProfile.Name"
+                android:text="имя"/>
+
+            <TextView
+                android:id="@+id/client_lastName"
+                style="@style/textProfile.Name"
+                android:text="фамилия"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="6pt"
+                android:text="Email:"/>
+
+            <TextView
+                android:id="@+id/client_email"
+                style="@style/textProfile.Date"
+                android:text="почта"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="6pt"
+                android:text="Телефон:"/>
+
+            <TextView
+                android:id="@+id/client_phone"
+                style="@style/textProfile.Date"
+                android:text="телефон"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

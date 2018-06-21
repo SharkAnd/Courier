@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "561921302135",
+    "firebase_url": "https://courier-23cf8.firebaseio.com",
+    "project_id": "courier-23cf8",
+    "storage_bucket": "courier-23cf8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561921302135:android:3228fab691c3e971",
+        "android_client_info": {
+          "package_name": "dell.courier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561921302135-r4dvu4qu0ol0nk84ujtmsuqrpni7poah.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dell.courier",
+            "certificate_hash": "7ab91b75311b2887a0ba9652dcde53d905ba02fd"
+          }
+        },
+        {
+          "client_id": "561921302135-0fqmeqdang1q12gcv39t6q24h5ukpllf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUo_dS69tGYJihr-jD41DKYRjmLanYbu4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561921302135-0fqmeqdang1q12gcv39t6q24h5ukpllf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:tools="http://schemas.android.com/tools">
+
+    <Button
+        android:id="@+id/date_orders_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/orders_courier_list"
+        android:layout_below="@id/date_orders_button"
+        android:layout_above="@+id/to_navigator_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        tools:listitem="@layout/order_item"/>
+
+    <Button
+        android:id="@+id/to_navigator_button"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Построить маршрут"/>
+
+</RelativeLayout>
